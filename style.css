@@ -2,13 +2,41 @@ body{
     background: url("153675167756cd6b83b8aa10016.png");
     margin: 0;
     background-size: 100%;
-
-
-    
+    background-attachment:fixed;
+	background-repeat: no-repeat; }
 }
 a{
     color: white;
+    margin-top: 10%;
+}
+.play{
+	margin-top: 1%;
+	margin-left: 36%;
+	margin-right: 36%;
+	position: absolute;
+}
+.normal{
+	margin-top: 2.5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	position: absolute;
+}
+.hard{
+	margin-top: 2.5%;
+	margin-left: 62%;
+	margin-right: 62%;
+	position: absolute;
 }
 h1{
     color: white;
+}
+img{
+	margin-left: 14%;
+	margin-right: 14%;
+	display: block
+}
+iframe{
+	margin-left: 32%;
+	margin-right: 32%;
+	display: block;
 }
