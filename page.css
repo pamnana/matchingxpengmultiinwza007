@@ -7,7 +7,7 @@ html{
 
 body{
     background: hsl(155,67%,67%);
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
@@ -91,6 +91,44 @@ h2{
   color: hsl(52,100%,70%);
   font-family:  'Lobster', cursive;
 }
+.game-over-text{
+  display: none;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: hsl(52,100%,70%);
+  font-family:  'Lobster', cursive;
+}
+
+.game-over-text .visible{
+  display: flex;
+  flex-direction: column;
+  animation: overlay-grow 500ms forwards;
+}
+
+.victory-text {
+  display: none;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: hsl(52,100%,70%);
+  font-family:  'Lobster', cursive;
+}
+.victory-text .visible{
+  display: flex;
+  flex-direction: column;
+  animation: overlay-grow 500ms forwards;
+}
 
 .overlay-text-small{
   font-size: .3em;
@@ -101,6 +139,7 @@ h2{
   flex-direction: column;
   animation: overlay-grow 500ms forwards;
 }
+
 @keyframes overlay-grow {
   from{
     background-color: rgba(0, 0, 0, 0);
