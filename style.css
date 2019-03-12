@@ -10,7 +10,9 @@ body{
     height: 100vh;
     background-repeat: no-repeat!important;
     background-size: cover!important;
+    background-attachment:fixed;
     cursor: url(effect/cursor/MagicWand.cur), default;
+    display: block;
 }
 a{
     color: white;
