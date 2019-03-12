@@ -42,7 +42,8 @@ h2{
 }
 
 .card{
-  background-color: hsl(155,67%,67%);
+  position: relative;
+  background-image: none;
   height: 180px;
   width: 120px;
 }
@@ -122,7 +123,7 @@ h2{
   align-items: center;
   z-index: 100;
   color: hsl(52,100%,70%);
-  font-family:  'Lobster', cursive;
+  font-family: 'Lobster', cursive;
 }
 .victory-text.visible{
   display: flex;
@@ -165,12 +166,12 @@ h2{
 }
 
 .card-back{
-  background-color: white;
-  border-color: white;
+  background-image: url("src/FrontCard.png");
+  border-color: #191919;
 }
 .card-front{
-  background-color: white;
-  border-color: white;
+  background-image: url("src/BackCard.png");
+  border-color: #0f0e1a;
   transform: rotateY(180deg);
 }
 
@@ -180,7 +181,7 @@ h2{
 }
 
 .card-front:hover .card-value{
-  transform:  scale(1);
+  transform: scale(1);
 }
 
 .cob-web {
@@ -190,11 +191,7 @@ h2{
   transition: width 100ms ease-in-out, height 100ms ease-in-out;
 }
 
-.card-face:hover .cob-web{
-}
-
 .cob-web-top-left{
-  transform: rotate(270deg);
   top: 0;
   left: 0;
 }
@@ -205,13 +202,11 @@ h2{
 }
 
 .cob-web-bottom-left{
-  transform: rotate(180deg);
   bottom: 0;
   left: 0;
 }
 
 .cob-web-bottom-right{
-  transform: rotate(90deg);
   bottom: 0;
   right: 0;
 }
