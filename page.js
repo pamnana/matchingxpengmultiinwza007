@@ -75,7 +75,7 @@ if (document.readyState == 'loading') {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MixOrMatch(3, cards);
+    let game = new MixOrMatch(10, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
