@@ -21,6 +21,23 @@ a{
 	margin-left: 36%;
 	margin-right: 36%;
 	position: absolute;
+  animation: fadeInDown 7s;
+}
+.main-title{
+  animation: fadeInDown 3s;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 .normal{
 	margin-top: 2.5%;
@@ -28,6 +45,12 @@ a{
 	margin-right: 10%;
 	position: absolute;
 	cursor: url("effect/cursor/MagicWand.cur"), default;
+  animation: fadeInDown 5s;
+  transition: .5s ease;
+}
+
+.normal:hover{
+  opacity: 0.6;
 }
 .hard{
 	margin-top: 2.5%;
@@ -35,6 +58,11 @@ a{
 	margin-right: 62%;
 	position: absolute;
 	cursor: url("effect/cursor/MagicWand.cur"), default;
+  animation: fadeInDown 5s;
+  transition: .5s ease;
+}
+.hard:hover{
+  opacity: 0.6;
 }
 h1{
     color: white;
