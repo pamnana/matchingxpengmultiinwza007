@@ -41,7 +41,6 @@ h2{
 
 .card{
   position: relative;
-  background-image: none;
   height: 180px;
   width: 120px;
 }
@@ -69,12 +68,8 @@ h2{
   transform: rotateY(-180deg);
 }
 
-.card.matched .card-front{
+.card.visible .card-front {
   transform: rotateY(0);
-}
-
-.card:hover .card-value{
-  animation: dance 1s linear infinite 500ms;
 }
 
 .overlay-text{
