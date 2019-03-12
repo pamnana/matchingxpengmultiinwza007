@@ -9,151 +9,410 @@
 </head>
 <body>
     <h2>Magic school X Matching Game</h2>
-    <h3>select the right duo crad</h3>
-    <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
+    <div class="overlay-text visible">
+      Click to Start
     </div>
-    <div class="flip-card-back">
+    <div class="game-over-text visible">
+      GAME OVER
+      <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div class="victory-text visible">
+      VICTORY
+      <span class="overlay-text-small">Click to Restart</span>
+    </div>
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time :<span id="time-remaining">60</span>
+      </div>
+      <div class="game-info">
+        Flip :<span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="label" src="Label.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="cob-web cob-web-top-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-top-right"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-left"
+        src="Label.jpg"
+        <img class="cob-web cob-web-bottom-right"
+        src="Label.jpg"
+        <img class="card-value" src="Label.jpg">
+      </div>
     </div>
   </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div></div>
-    </div>
-    <div class="flip-card-back">
-    </div>
-  </div>
-</div>
-    <h3>Time : 10</h3>
 </body>
 </html>
