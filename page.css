@@ -6,7 +6,7 @@ html{
 }
 
 body{
-    background: hsl(155,67%,67%);
+    background: url("src/BGpage.jpg");
     margin-top: 1%;
     margin-left: 5%;
     margin-right: 5%;
