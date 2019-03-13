@@ -19,7 +19,7 @@ h2{
     font-weight: normal;
 }
 a:link{
-  !important ;text-decoration:none;
+  text-decoration:none;
 }
 .game-info{
   color: hsl(0,57%,60%);
