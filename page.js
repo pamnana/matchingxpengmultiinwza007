@@ -38,7 +38,8 @@ class MixOrMatch {
     victory() {
         clearInterval(this.countdown);
         document.getElementById('victory-text').classList.add('visible');
-        document.getElementById('result').innerHTML = "<br>Total Flips : " + this.totalClicks;
+        document.getElementById('result-vic').innerHTML = "<br>Total Flips : " + this.totalClicks;
+
     }
     hideCards() {
         this.cardsArray.forEach(card => {

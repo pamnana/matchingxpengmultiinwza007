@@ -239,3 +239,6 @@ a{
 span.back-menu:hover{
   color:red;
 }
+.card.matched .card-value {
+  animation: dance 1s linear infinite 500ms;
+}
