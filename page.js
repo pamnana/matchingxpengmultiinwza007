@@ -111,7 +111,7 @@ if (document.readyState == 'loading') {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MixOrMatch(3, cards);
+    let game = new MixOrMatch(60, cards);
     document.getElementById('game-start-text').innerHTML= "<center>Are you ready?<br>Click to Play.</center>";
     document.getElementById('game-start-text').addEventListener('click',() =>{;
             startCount()
@@ -141,6 +141,7 @@ function ready() {
 }
 function restart(){
     document.getElementById('game-over-text').classList.remove('visible');
+    document.getElementById('victory-text').classList.remove('visible');
     document.getElementById('game-start-text').classList.add('visible');
     for (var i = 1 ; i <= 16; i++){
         var check = document.getElementById('show'+i).className;
