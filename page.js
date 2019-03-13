@@ -12,7 +12,6 @@ class MixOrMatch {
         this.timeRemaining = this.totalTime;
         this.cardToCheck = null;
         this.matchedCards = [];
-        this.shuffleCards(this.cardsArray);
         this.busy = true;
         setTimeout(() => {
             this.countdown = this.startCountdown();
@@ -94,7 +93,7 @@ class MixOrMatch {
         }
         cardsArray = cardsArray.map((card, index) => {
             card.style.order = index;
-        });
+        }); 
     }
     getCardType(card) {
         return card.getElementsByClassName('card-value')[0].src;
@@ -106,20 +105,44 @@ class MixOrMatch {
 
 
 if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready)
+    document.addEventListener('DOMContentLoaded', ready());
 } else {
-    ready()
+    ready();
 }
 
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new MixOrMatch(60, cards);
-
+    document.getElementById('game-start-text').innerHTML= "<center>Are you ready?<br>Click to Play.</center>";
+    var countStart = 3;
+    game.shuffleCards(cards);
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
-            overlay.classList.remove('visible');
-            game.startGame();
+            document.getElementById('show1').classList.add('visible')
+            document.getElementById('show2').classList.add('visible')
+            document.getElementById('show3').classList.add('visible')
+            document.getElementById('show4').classList.add('visible')
+            document.getElementById('show5').classList.add('visible')
+            document.getElementById('show6').classList.add('visible')
+            document.getElementById('show7').classList.add('visible')
+            document.getElementById('show8').classList.add('visible')
+            document.getElementById('show9').classList.add('visible')
+            document.getElementById('show10').classList.add('visible')
+            document.getElementById('show11').classList.add('visible')
+            document.getElementById('show12').classList.add('visible')
+            document.getElementById('show13').classList.add('visible')
+            document.getElementById('show14').classList.add('visible')
+            document.getElementById('show15').classList.add('visible')
+            document.getElementById('show16').classList.add('visible')
+            setInterval(() => {
+            document.getElementById('game-start-text').innerHTML = countStart;
+            if(countStart === -1){
+                overlay.classList.remove('visible');
+                game.startGame();
+            }
+            countStart--;
+        }, 1000);
         });
     });
 
