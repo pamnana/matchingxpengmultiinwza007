@@ -1,3 +1,4 @@
+
 class MixOrMatch {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
@@ -101,9 +102,6 @@ class MixOrMatch {
 }
 
 
-
-
-
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready());
 } else {
@@ -113,42 +111,36 @@ if (document.readyState == 'loading') {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MixOrMatch(60, cards);
+    let game = new MixOrMatch(3, cards);
     document.getElementById('game-start-text').innerHTML= "<center>Are you ready?<br>Click to Play.</center>";
-    var countStart = 3;
     game.shuffleCards(cards);
-    overlays.forEach(overlay => {
-        overlay.addEventListener('click', () => {
-            document.getElementById('show1').classList.add('visible')
-            document.getElementById('show2').classList.add('visible')
-            document.getElementById('show3').classList.add('visible')
-            document.getElementById('show4').classList.add('visible')
-            document.getElementById('show5').classList.add('visible')
-            document.getElementById('show6').classList.add('visible')
-            document.getElementById('show7').classList.add('visible')
-            document.getElementById('show8').classList.add('visible')
-            document.getElementById('show9').classList.add('visible')
-            document.getElementById('show10').classList.add('visible')
-            document.getElementById('show11').classList.add('visible')
-            document.getElementById('show12').classList.add('visible')
-            document.getElementById('show13').classList.add('visible')
-            document.getElementById('show14').classList.add('visible')
-            document.getElementById('show15').classList.add('visible')
-            document.getElementById('show16').classList.add('visible')
-            setInterval(() => {
+    document.getElementById('game-start-text').addEventListener('click',() =>{;
+            startCount()
+            function startCount(){
+                var countStart = 3;
+            for (var i = 1 ; i <= 16; i++){
+                document.getElementById('show'+i).classList.add('visible');
+            }
+            var start = setInterval(() => {
             document.getElementById('game-start-text').innerHTML = countStart;
             if(countStart === -1){
-                overlay.classList.remove('visible');
+                document.getElementById('game-start-text').classList.remove('visible');
                 game.startGame();
+                clearInterval(start);
             }
-            countStart--;
-        }, 1000);
+                countStart--;
+                }, 1000);
+            }
         });
-    });
 
     cards.forEach(card => {
         card.addEventListener('click', () => {
             game.flipCard(card);
         });
     });
+}
+function restart(){
+    document.getElementById('game-over-text').classList.remove('visible');
+    document.getElementById('game-start-text').classList.add('visible');
+    ready();
 }
