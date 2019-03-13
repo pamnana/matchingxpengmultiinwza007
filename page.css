@@ -18,6 +18,9 @@ h2{
     color: hsl(52,100%,70%);
     font-weight: normal;
 }
+a:link{
+  text-decoration:none;
+}
 .game-info{
   color: hsl(0,57%,60%);
   font-family: 'Roboto', sans-serif;
