@@ -38,6 +38,7 @@ class MixOrMatch {
     victory() {
         clearInterval(this.countdown);
         document.getElementById('victory-text').classList.add('visible');
+        document.getElementById('result').innerHTML = "<br>Total Flips : " + this.totalClicks;
     }
     hideCards() {
         this.cardsArray.forEach(card => {
@@ -112,7 +113,7 @@ if (document.readyState == 'loading') {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MixOrMatch(5, cards);
+    let game = new MixOrMatch(60, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
