@@ -113,9 +113,9 @@ function ready() {
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new MixOrMatch(3, cards);
     document.getElementById('game-start-text').innerHTML= "<center>Are you ready?<br>Click to Play.</center>";
-    game.shuffleCards(cards);
     document.getElementById('game-start-text').addEventListener('click',() =>{;
             startCount()
+            game.shuffleCards(cards);
             function startCount(){
                 var countStart = 3;
             for (var i = 1 ; i <= 16; i++){
@@ -142,5 +142,12 @@ function ready() {
 function restart(){
     document.getElementById('game-over-text').classList.remove('visible');
     document.getElementById('game-start-text').classList.add('visible');
+    for (var i = 1 ; i <= 16; i++){
+        var check = document.getElementById('show'+i).className;
+        if (check.includes('matched')) {
+            document.getElementById('show'+i).classList.remove('matched');
+            document.getElementById('show'+i).classList.remove('visible');
+        }
+    }
     ready();
 }
