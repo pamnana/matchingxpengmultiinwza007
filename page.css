@@ -173,13 +173,13 @@ a:link{
 
 @keyframes aura{
   0%, 100%,{
-    box-shadow: 0px 0px 30px green;
+    box-shadow: 0px 0px 30px #8A2BE2;
   }
   25% {
-    box-shadow: 0px 0px 50px green;
+    box-shadow: 0px 0px 50px #8A2BE2;
   }
   75%{
-    box-shadow: 0px 0px 80px green;
+    box-shadow: 0px 0px 80px #8A2BE2;
   }
 
 }
