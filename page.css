@@ -21,6 +21,12 @@ h2{
 a:link{
   text-decoration:none;
 }
+.sandclock{
+  width: 130px;
+  height: auto;
+  margin-left: 10%;
+  margin-top: 0;
+}
 .game-info{
   color: hsl(0,57%,60%);
   font-family: 'Roboto', sans-serif;
@@ -38,6 +44,7 @@ a:link{
   grid-template-columns: repeat(8, auto);
   grid-gap: 5px;
   margin: 50px;
+  margin-bottom: 5px;
   justify-content: center;
   perspective: 500px;
 }
