@@ -21,12 +21,6 @@ h2{
 a:link{
   text-decoration:none;
 }
-.sandclock{
-  width: 130px;
-  height: auto;
-  margin-left: 10%;
-  margin-top: 0;
-}
 .game-info{
   color: hsl(0,57%,60%);
   font-family: 'Roboto', sans-serif;
@@ -102,6 +96,26 @@ a:link{
   z-index: 100;
   color: hsl(52,100%,70%);
   font-family:  'Lobster', cursive;
+}
+.time-text {
+  display: none;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: hsl(52,100%,70%);
+  font-family:  'Lobster', cursive;
+}
+
+.time-text.visible{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, .8);
+  font-size: 8em;
 }
 .game-over-text{
   display: none;
@@ -269,4 +283,13 @@ span.back-menu:hover{
 }
 .card.matched .card-value {
   animation: dance 1s linear infinite 500ms;
+}
+.time-block{
+  width: 75vw;
+  height: 35px;
+  background-color:white;
+  margin-left: 13%;
+  margin-top: 5%;
+  border-radius: 10px;
+  transition: 1s;
 }

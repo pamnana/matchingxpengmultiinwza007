@@ -26,6 +26,7 @@ class MixOrMatch {
         return setInterval(() => {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
+            document.getElementById('time-block').style.width = 75 * (this.timeRemaining/60) + "vw";
             if(this.timeRemaining === 0)
                 this.gameOver();
         }, 1000);
@@ -114,17 +115,20 @@ function ready() {
     let game = new MixOrMatch(60, cards);
     document.getElementById('game-start-text').innerHTML= "<center>Are you ready?<br>Click to Play.</center>";
     document.getElementById('game-start-text').addEventListener('click',() =>{;
+            document.getElementById('game-start-text').classList.remove('visible');
+            document.getElementById('time-text').classList.add('visible');
+            document.getElementById('time-text').innerText = 3;
             startCount()
             game.shuffleCards(cards);
             function startCount(){
-                var countStart = 3;
+                var countStart = 2;
             for (var i = 1 ; i <= 16; i++){
                 document.getElementById('show'+i).classList.add('visible');
             }
             var start = setInterval(() => {
-            document.getElementById('game-start-text').innerHTML = countStart;
+            document.getElementById('time-text').innerHTML = countStart;
             if(countStart === -1){
-                document.getElementById('game-start-text').classList.remove('visible');
+                document.getElementById('time-text').classList.remove('visible');
                 game.startGame();
                 clearInterval(start);
             }
@@ -150,5 +154,6 @@ function restart(){
             document.getElementById('show'+i).classList.remove('visible');
         }
     }
+    document.getElementById('time-block').style.width = 75+"vw";
     ready();
 }
