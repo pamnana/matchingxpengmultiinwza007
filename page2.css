@@ -40,8 +40,8 @@ a:link{
 }
 .heart.visible{
   opacity: 0;
-  transition: 0.5s;
-  transform: rotate(2turn);
+  transition: 1.5s;
+  transform: rotate(2turn) scale(0);
   background-size: 0;
   background-color: transparent;
 }
