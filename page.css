@@ -65,7 +65,8 @@ a:link{
   border-radius: 1em;
   border-width: 1px;
   border-style: solid;
-  transition: transform 500ms ease-in-out;
+  /*change time card flip here ตรงmsนะ*/
+  transition: transform 450ms ease-in-out;
 }
 
 .card.visible .card-back{
@@ -74,7 +75,6 @@ a:link{
 
 .card.visible .card-front {
   transform: rotateY(0);
-
 }
 
 .card.matched .card-value {
