@@ -41,6 +41,9 @@ a:link{
 .heart.visible{
   opacity: 0;
   transition: 0.5s;
+  transform: rotate(2turn);
+  background-size: 0;
+  background-color: transparent;
 }
 .game-info-container{
   grid-column: 1/-1;
