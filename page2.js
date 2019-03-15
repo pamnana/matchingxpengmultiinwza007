@@ -112,7 +112,7 @@ if (document.readyState == 'loading') {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MixOrMatch(60, cards);
+    let game = new MixOrMatch(80, cards);
     document.getElementById('game-start-text').innerHTML= "<center>Are you ready?<br>Click to Play.</center>";
     document.getElementById('game-start-text').addEventListener('click',() =>{;
             document.getElementById('game-start-text').classList.remove('visible');
