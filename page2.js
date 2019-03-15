@@ -20,13 +20,13 @@ class MixOrMatch {
             this.busy = false;
         }, 500)
         this.hideCards();
-        this.timer.innerText = this.timeRemaining;
+        //this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
     }
     startCountdown() {
         return setInterval(() => {
             this.timeRemaining--;
-            this.timer.innerText = this.timeRemaining;
+            //this.timer.innerText = this.timeRemaining;
             document.getElementById('time-block').style.width = 75 * (this.timeRemaining/80) + "vw";
             if(this.timeRemaining === 0)
                 this.gameOver();
