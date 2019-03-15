@@ -1,5 +1,5 @@
 *{
-  box-sizing: border-box;;
+  box-sizing: border-box;
 }
 html{
   cursor: url(MagicWand.cur), auto;
@@ -8,10 +8,14 @@ html{
 body{
     background: url("src/BackgroundHardnew.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 h2{
     text-align: center;
+    margin-top: 2%;
     margin-bottom: 1%;
+    position: static; 
     font-family: 'Lobster', cursive;
     font-size: 70px;
     color: hsl(52,100%,70%);
@@ -34,7 +38,7 @@ a:link{
 .heartrow{
   display: flex;
   justify-content: left;
-  height: 4vh;
+  height: 3vh;
 }
 .heart.visible{
   opacity: 0;
@@ -306,15 +310,14 @@ span.back-menu:hover{
   height: 35px;
   background-color: white;
   margin-left: 13%;
-  margin-top: 5%;
+  margin-top: 4.5%;
   border-radius: 10px;
   transition: 1s;
   position: relative;
 }
 .Sandclock{
-  width: 90px;
-  height: auto;
-  position:absolute;
-  left:-46px;
-  bottom:-18px;
+  width: 70px;
+  position: absolute;
+  left:-35px;
+  top:-23px;
 }
