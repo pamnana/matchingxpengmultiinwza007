@@ -10,6 +10,7 @@ class MixOrMatch {
 
     startGame() {
         this.totalClicks = 0;
+        this.lifeRemaining = 10;
         this.timeRemaining = this.totalTime;
         this.cardToCheck = null;
         this.matchedCards = [];
@@ -26,7 +27,7 @@ class MixOrMatch {
         return setInterval(() => {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
-            document.getElementById('time-block').style.width = 75 * (this.timeRemaining/60) + "vw";
+            document.getElementById('time-block').style.width = 75 * (this.timeRemaining/80) + "vw";
             if(this.timeRemaining === 0)
                 this.gameOver();
         }, 1000);
@@ -84,6 +85,11 @@ class MixOrMatch {
             card2.classList.remove('visible');
             this.busy = false;
         }, 1000);
+        this.lifeRemaining--;
+        if (this.lifeRemaining === 0){
+            this.gameOver();
+        }
+
     }
     canFlipCard(card) {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
