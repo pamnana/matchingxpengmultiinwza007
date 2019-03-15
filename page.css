@@ -9,6 +9,8 @@ body{
     background: url("src/BGpagenew.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    width: 99%;
+    heigth: 99%;
 }
 h2{
     text-align: center;
