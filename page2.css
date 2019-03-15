@@ -35,9 +35,10 @@ a:link{
   display: flex;
   justify-content: left;
   margin-left: 60%;
+  height: 4vh;
 }
 .heart.visible{
-
+  animation: overlay-grow 500ms forwards;
 }
 .game-info-container{
   grid-column: 1/-1;
