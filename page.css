@@ -293,3 +293,9 @@ span.back-menu:hover{
   border-radius: 10px;
   transition: 1s;
 }
+.Sandclock{
+  width: 130px;
+  height: auto;
+  margin-left: 8%;
+  margin-top: -5%;
+}
