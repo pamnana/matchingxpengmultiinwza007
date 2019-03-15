@@ -35,7 +35,6 @@ a:link{
 .heartrow{
   display: flex;
   justify-content: left;
-  margin-left: 60%;
   height: 4vh;
 }
 .heart.visible{
