@@ -226,8 +226,8 @@ a:link{
 
 .cob-web {
   position: absolute;
-  width: 120px;
-  height: 180px;
+  width: 90px;
+  height: 150px;
   transition: width 100ms ease-in-out, height 100ms ease-in-out;
 }
 
