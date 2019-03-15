@@ -312,9 +312,9 @@ span.back-menu:hover{
   position: relative;
 }
 .Sandclock{
-  width: 150px;
+  width: 90px;
   height: auto;
   position:absolute;
-  left:-75px;
-  bottom:-39px;
+  left:-46px;
+  bottom:-18px;
 }
