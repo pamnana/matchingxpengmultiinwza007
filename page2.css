@@ -29,13 +29,12 @@ a:link{
 .heart{
   justify-content: right;
   display: inline-block;
-  width: 15px;
-  height: auto;
+  width: 25px;
 }
 .heartrow{
   display: flex;
   justify-content: left;
-  margin-left: 68%;
+  margin-left: 60%;
 }
 .heart.visible{
 
