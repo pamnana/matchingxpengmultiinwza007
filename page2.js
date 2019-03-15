@@ -85,8 +85,10 @@ class MixOrMatch {
             card2.classList.remove('visible');
             this.busy = false;
         }, 1000);
+        document.getElementById('heart'+this.lifeRemaining).classList.add('visible');
         this.lifeRemaining--;
         if (this.lifeRemaining === 0){
+            document.getElementById
             this.gameOver();
         }
 
@@ -158,6 +160,12 @@ function restart(){
         if (check.includes('matched')) {
             document.getElementById('show'+i).classList.remove('matched');
             document.getElementById('show'+i).classList.remove('visible');
+        }
+    }
+    for(var j = 1 ;  j<= 10; j++){
+        var check1 = document.getElementById('heart'+j).className;
+        if (check1.includes('visible')){
+            document.getElementById('heart'+j).classList.remove('visible');
         }
     }
     document.getElementById('time-block').style.width = 75+"vw";

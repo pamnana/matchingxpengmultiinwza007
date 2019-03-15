@@ -30,6 +30,7 @@ a:link{
   justify-content: right;
   display: inline-block;
   width: 25px;
+  transition: 2s;
 }
 .heartrow{
   display: flex;
@@ -38,7 +39,11 @@ a:link{
   height: 4vh;
 }
 .heart.visible{
-  animation: overlay-grow 500ms forwards;
+  opacity: 0;
+  transition: 1.5s;
+  transform: rotate(2turn) scale(0);
+  background-size: 0;
+  background-color: transparent;
 }
 .game-info-container{
   grid-column: 1/-1;
