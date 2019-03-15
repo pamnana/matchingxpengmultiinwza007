@@ -26,7 +26,20 @@ a:link{
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
 }
+.heart{
+  justify-content: right;
+  display: inline-block;
+  width: 15px;
+  height: auto;
+}
+.heartrow{
+  display: flex;
+  justify-content: left;
+  margin-left: 68%;
+}
+.heart.visible{
 
+}
 .game-info-container{
   grid-column: 1/-1;
   display: flex;
@@ -38,6 +51,7 @@ a:link{
   grid-template-columns: repeat(8, auto);
   grid-gap: 5px;
   margin: 50px;
+  margin-top: 5px;
   margin-bottom: 5px;
   justify-content: center;
   perspective: 500px;
