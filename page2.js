@@ -147,7 +147,7 @@ function restart(){
     document.getElementById('game-over-text').classList.remove('visible');
     document.getElementById('victory-text').classList.remove('visible');
     document.getElementById('game-start-text').classList.add('visible');
-    for (var i = 1 ; i <= 16; i++){
+    for (var i = 1 ; i <= 24; i++){
         var check = document.getElementById('show'+i).className;
         if (check.includes('matched')) {
             document.getElementById('show'+i).classList.remove('matched');
