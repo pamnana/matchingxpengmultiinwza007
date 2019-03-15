@@ -6,7 +6,7 @@ html{
 }
 
 body{
-    background: url("src/BGpage.jpg");
+    background: url("src/BackgroundHard.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -45,8 +45,8 @@ a:link{
 
 .card{
   position: relative;
-  height: 180px;
-  width: 120px;
+  height: 150px;
+  width: 90px;
 }
 
 .card:hover{
@@ -55,8 +55,8 @@ a:link{
 
 .card-face {
   position: absolute;
-  width: 120px;
-  height: 180px;
+  width: 90px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,11 +206,11 @@ a:link{
 }
 
 .card-back{
-  background-image: url("src/FrontCard.png");
+  background-image: url("src/Hard/CardHard2.png");
   border-color: #191919;
 }
 .card-front{
-  background-image: url("src/BackCard.png");
+  background-image: url("src/Hard/front1.png");
   border-color: #0f0e1a;
   transform: rotateY(180deg);
 }
