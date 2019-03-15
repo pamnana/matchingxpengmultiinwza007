@@ -21,6 +21,9 @@ h2{
     color: hsl(52,100%,70%);
     font-weight: normal;
 }
+#flip{
+  color: white;
+}
 a:link{
   text-decoration:none;
 }

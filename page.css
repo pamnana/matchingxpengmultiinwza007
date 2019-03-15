@@ -3,15 +3,14 @@
 }
 html{
   cursor: url(MagicWand.cur), auto;
+  height: 100vh;
 }
 
 body{
     background: url("src/BGpagenew.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 99%;
-    padding:0px;
-    margin:0px;
+    background-clip: fixed;
 
 }
 h2{
@@ -26,7 +25,7 @@ a:link{
   text-decoration:none;
 }
 .game-info{
-  color: hsl(0,57%,60%);
+  color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
 }
@@ -42,6 +41,7 @@ a:link{
   grid-template-columns: repeat(8, auto);
   grid-gap: 5px;
   margin: 50px;
+  margin-top:5px;
   margin-bottom: 5px;
   justify-content: center;
   perspective: 500px;
