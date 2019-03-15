@@ -29,16 +29,16 @@ a:link{
 .heart{
   justify-content: right;
   display: inline-block;
-  width: 15px;
-  height: auto;
+  width: 25px;
 }
 .heartrow{
   display: flex;
   justify-content: left;
-  margin-left: 68%;
+  margin-left: 60%;
+  height: 4vh;
 }
 .heart.visible{
-
+  animation: overlay-grow 500ms forwards;
 }
 .game-info-container{
   grid-column: 1/-1;
