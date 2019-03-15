@@ -7,12 +7,11 @@ html{
 }
 
 body{
-    background: url("src/BGpagenew.jpg");
+    background: url("src/BGpage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-clip: fixed;
-
 }
+
 h2{
     text-align: center;
     margin-bottom: 1%;
