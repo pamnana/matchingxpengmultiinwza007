@@ -215,7 +215,7 @@ h1{
 
    /*  popup */
   .modal {
-  display: inline-block;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
