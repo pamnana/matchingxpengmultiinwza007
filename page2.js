@@ -6,7 +6,7 @@ class MixOrMatch {
         this.timeRemaining = totalTime;
         this.matchSound = new Audio('sound/correct.mp3');
         this.missSound = new Audio('sound/incorrect.mp3');
-        this.flip = new Audio('sound/click.mp3');
+        this.flip = new Audio('sound/click(new).mp3');
         this.timer = document.getElementById('time-remaining')
         this.ticker = document.getElementById('flips');
     }
