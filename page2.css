@@ -382,3 +382,10 @@ span.back-menu:hover{
   position: fixed;
   z-index: -1;
 }
+#pre{
+  width: 220px;
+}
+#pre:hover{
+  opacity: 0.6;
+  cursor: url(MagicWand.cur), auto;
+}
