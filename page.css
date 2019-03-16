@@ -343,3 +343,12 @@ span.back-menu:hover{
   background-repeat:no-repeat;
   border: none;
 }
+#imgrestart{
+  width: 160px;
+}
+#ball{
+  margin-top: 12px;
+  width: 400px;
+  position: fixed;
+  z-index: -1;
+}
