@@ -250,8 +250,8 @@ h1{
 }
 #fullscreen{
   position: fixed;
-  top: 90px;
-  right: 160px;
+  bottom: 20px;
+  right: 120px;
   z-index: 99;
   border: none;
   outline: none;
@@ -265,8 +265,8 @@ h1{
 }
 #mute{
   position: fixed;
-  top: 90px;
-  right: 220px;
+  bottom: 20px;
+  right: 180px;
   z-index: 99;
   border: none;
   outline: none;
