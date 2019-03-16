@@ -7,6 +7,8 @@ class MixOrMatch {
         this.matchSound = new Audio('sound/correct.mp3');
         this.missSound = new Audio('sound/incorrect1.wav');
         this.flip = new Audio('sound/click(new).mp3');
+        this.lose = new Audio('sound/gameover.mp3');
+        this.win = new Audio('sound/Winner.mp3');
         this.timer = document.getElementById('time-remaining')
         this.ticker = document.getElementById('flips');
     }
@@ -38,11 +40,13 @@ class MixOrMatch {
         clearInterval(this.countdown);
         document.getElementById('game-over-text').classList.add('visible');
         document.getElementById('result').innerHTML = "<br>Total Flips : " + this.totalClicks;
+        this.lose.play();
     }
     victory() {
         clearInterval(this.countdown);
         document.getElementById('victory-text').classList.add('visible');
         document.getElementById('result-vic').innerHTML = "<br>Total Flips : " + this.totalClicks;
+        this.win.play();
 
     }
     hideCards() {
