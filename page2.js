@@ -125,11 +125,11 @@ function ready() {
     document.getElementById('game-start-text').addEventListener('click',() =>{;
             document.getElementById('game-start-text').classList.remove('visible');
             document.getElementById('time-text').classList.add('visible');
-            document.getElementById('time-text').innerText = 3;
+            document.getElementById('time-text').innerText = 5;
             startCount()
             game.shuffleCards(cards);
             function startCount(){
-                var countStart = 2;
+                var countStart = 4;
             for (var i = 1 ; i <= 24; i++){
                 document.getElementById('show'+i).classList.add('visible');
             }
