@@ -358,3 +358,8 @@ span.back-menu:hover{
 #imgmute{
   width: 50px;
 }
+#restart{
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+}
