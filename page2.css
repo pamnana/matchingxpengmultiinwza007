@@ -325,3 +325,36 @@ span.back-menu:hover{
   left:-35px;
   top:-23px;
 }
+#fullscreen{
+  position: fixed;
+  top: 70px;
+  right: 150px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  padding: 15px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+}
+#fullscreen:hover{
+  opacity: 0.6;
+}
+#mute{
+  position: fixed;
+  top: 70px;
+  right: 95px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  padding: 15px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+}
+#mute:hover{
+  opacity: 0.6;
+}
+#imgmute{
+  width: 50px;
+}
