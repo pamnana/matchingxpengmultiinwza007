@@ -163,3 +163,27 @@ function restart(){
     document.getElementById('time-block').style.width = 75+"vw";
     ready();
 }
+var checkSound = true;
+function Mute(){
+    if (checkSound == true){
+        checkSound = false;
+        document.getElementById('main_audio').pause();
+    }
+    else{
+        checkSound = true;
+        document.getElementById('main_audio').play();
+    }
+}
+var check2 = false;
+function Fullscreen(){
+    var screen = document.documentElement;
+    if (check2 == false){
+        screen.requestFullscreen();
+        check2 = true;
+    }
+    else if (check2 == true){
+        document.exitFullscreen();
+        check2 = false
+    }
+
+}

@@ -10,7 +10,10 @@
     <button onclick="Fullscreen()" id="fullscreen"><img src="src/full.png"></button>
     <button onclick="Mute()" id="mute"><img id="imgmute" src="src/mute.png"></button>
     <h2>Magic school X Matching Game</h2>
-    <embed src="sound/page.mp3" width="0" height="0" loop="true" autostart="true" hidden="true" />
+    <audio id="main_audio" autoplay="autoplay" loop="loop" preload="auto">
+      <source src="sound/page.mp3" type="audio/mpeg" />
+      <embed src="sound/page.mp3" width="0" height="0" loop="true" autostart="true" hidden="true" />
+    </audio>
     <div class="overlay-text visible" id="game-start-text">
       Click to Start
     </div>
