@@ -249,3 +249,37 @@ h1{
   text-decoration: none;
   cursor: pointer;
 }
+#fullscreen{
+  position: fixed;
+  top: 90px;
+  right: 160px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  padding: 15px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+}
+#fullscreen:hover{
+  opacity: 0.6;
+}
+#mute{
+  position: fixed;
+  top: 90px;
+  right: 220px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  padding: 15px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+}
+#mute:hover{
+  opacity: 0.6;
+}
+#imgmute{
+  width: 50px;
+}
+
