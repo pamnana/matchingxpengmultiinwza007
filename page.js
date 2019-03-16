@@ -4,6 +4,9 @@ class MixOrMatch {
         this.cardsArray = cards;
         this.totalTime = totalTime;
         this.timeRemaining = totalTime;
+        this.matchSound = new Audio('sound/correct.mp3');
+        this.missSound = new Audio('sound/incorrect.mp3');
+        this.flip = new Audio('sound/click.mp3');
         this.timer = document.getElementById('time-remaining')
         this.ticker = document.getElementById('flips');
     }
@@ -49,6 +52,7 @@ class MixOrMatch {
         });
     }
     flipCard(card) {
+        this.flip.play();
         if(this.canFlipCard(card)) {
             this.totalClicks++;
             this.ticker.innerText = this.totalClicks;
@@ -76,6 +80,7 @@ class MixOrMatch {
         card2.classList.add('matched');
         if(this.matchedCards.length === this.cardsArray.length)
             this.victory();
+        this.matchSound.play();
     }
     cardMismatch(card1, card2) {
         this.busy = true;
@@ -84,6 +89,7 @@ class MixOrMatch {
             card2.classList.remove('visible');
             this.busy = false;
         }, 1000);
+        this.missSound.play();
     }
     canFlipCard(card) {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
