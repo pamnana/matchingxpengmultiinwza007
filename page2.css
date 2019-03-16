@@ -327,8 +327,8 @@ span.back-menu:hover{
 }
 #fullscreen{
   position: fixed;
-  top: 70px;
-  right: 150px;
+  top: 90px;
+  right: 160px;
   z-index: 99;
   border: none;
   outline: none;
@@ -342,8 +342,8 @@ span.back-menu:hover{
 }
 #mute{
   position: fixed;
-  top: 70px;
-  right: 95px;
+  top: 90px;
+  right: 220px;
   z-index: 99;
   border: none;
   outline: none;
